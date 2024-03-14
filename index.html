@@ -15,66 +15,163 @@
   <html lang="en">
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Responsive Redesign Project</title>
+      <title>A/B Testing Project</title>
       <!-- import CSS styles -->
       <link rel="stylesheet" href="styles.css" /> 
     </head>
   
     
     <body class="main_body">
-        <header id="title" class="Katibeh-title">Responsive Redesign Project</header>
+        <header id="title" class="Katibeh-title">A/B Testing Project</header>
 
         <div class ="main_content">
             <h2 id="goal_section_label" class="section_text katibeh-section-text">Goal:</h2>
-            <h3 id="goal_text" class="sub_section_text karla-regular">We needed to find a website that had some issues to redesign and improve.
-                 In particular focusing on the responsiveness of the improved site. I chose the <a id="city_kitty_link" href="https://city-kitty.com/">site</a> for my cat's vet and you can find my redesign
-                 <a id="city_kitty_link" href="https://dalton-simonson.github.io/Responsive-Redesign">here</a>. Below is a picture of the original followed by a breakdown of the design process.</h3>
-            <img src="Images/original site picture.png" alt="original website image" id="original website image">
+            <h3 id="goal_text" class="sub_section_text karla-regular">We needed to conduct A/B testing for a provided site that had some notable issues with it. We were tasked with finding the
+              schedule appointment button corresponding to a particular care provider at a certain location. Then we took some time to edit the site to improve the user experience
+               and curb some of the issues we encountered in our previous task. Below are images, from top to bottom, of the original site and the altered one.</h3>
+            <img src="Images/version_a.png" class="site_image" alt="original website image" id="original website image">
+            <img src="Images/version_b.png" class="site_image" alt="altered website image" id="altered website image">
+            <h3 id="edits_description_text" class="sub_section_text karla-regular">A number of changes were made in this second version. Most notably picking better button colors for improved contrast.
+               Additionally, the dashed blue lines separating  the appointments help visually segment which buttons correspond to which appointments, which was a major issue with the original version. Lastly, a
+                darker color for some of the other text around the site helps again with issues of poor contrast.
+            </h3>
+
             <h2 id="procedure_section_label" class="section_text katibeh-section-text">Procedure:</h2>
-            <h3 id="procedure_text" class="sub_section_text karla-regular">The first thing to do before redesigning this site was point out some key usability issues.
-                 I encourage you to take a look at the original site and see if any of the issues I outline below stick out to you as well.</h3>
+            <h3 id="procedure_text" class="sub_section_text karla-regular">To understand if the edited version was in fact an improvement, we took metrics on both the first version of the site as well as the edited
+               version running the same task. These metrics can be used later in the analysis portion of the A/B testing process. These metrics are:
+            </h3>
                  <ul id="procedure_list" class="sub_list_text karla-list">
-                    <li>The signpost "buttons" are not immediately apparent as clickable</li>
-                    <li>The ordering of the items are seeimingly arbitrary (request appointment is sequestered off to the bottom right)</li>
-                    <li>Similar items are not grouped together</li>
-                    <li>Some of the signpost are not actually clickable but are identical to clickable elements</li>
-                    <li>Contrast errors throughout the site</li>
-                    <li>Overall slightly cluttered, unclear, and questionable color choices</li>
+                    <li>Time on page</li>
+                    <li>Time to first click</li>
+                    <li>Distance mouse moved</li>
+                    <li>Number of clicks</li>
+                    <li>Misclick rate</li>
+                    <li>User task completion rate</li>
                   </ul>
 
-            <h2 id="visual_redesign_section_label" class="section_text katibeh-section-text">Visual Redesign:</h2>
-            <h3 id="main_redesign_text" class="sub_section_text karla-regular">So now that I knew what some of the problems are with the site I try and maneuver each time my cat decides to eat
-                 a hair tie, I could begin to plan out what would be a good design. Starting off with a little speed sketching/brainstorming design layouts. When I had finished
-                 I needed to grab the best elements from each smaller sketch and combine them into a single prototype sketch which I would base my redesign from.</h3>
-            <div id = sketch_images>
-                <img src="Images/speed sketch.PNG" alt="speed sketch image" id="speed sketch image">
-                <img src="Images/final sketch.png" alt="final sketch" id="final_sketch">
-            </div>
-            <h3 id="main_redesign_text" class="sub_section_text karla-regular">After deciding the main style of my layout I needed to think about how my layout should translate to different screen
-                sizes. Additionally, at this step I needed to think more about color and UI elements. I did this through taking some time to put together some more detailed sketches for a desktop,
-                tablet, and mobile layout.
+            <h2 id="analysis_section_label" class="section_text katibeh-section-text">Analysis:</h2>
+            <h3 id="main_analysis_text" class="sub_section_text karla-regular">So now that we have conducted some testing between the two versions I can begin breaking down the data and gleaning some insights from that data. I focused
+              on three metrics in particular to determine whether  my updated version (version B) was "better" than the original (version A).
             </h3>
-            <div id="screen_sketches">
-                <img src="Images/desktop sketch.png" alt="desktop sketch image" id="desktop_sketch" class="screen_layout_sketches">
-                <img src="Images/tablet sketch.png" alt="tablet sketch image" id="tablet_sketch" class="screen_layout_sketches">
-                <img src="Images/mobile sketch.png" alt="mobile sketch image" id="mobile_sketch" class="screen_layout_sketches">
-            </div>
-            <h3 id="annotation_text" class="sub_section_text karla-regular">These new designs aim to tackle the issues presented above with the original site. The new design clearly shows what is clickable
-                 and orders those clickable elements in a sensible configuration. For example, making an appointment is one of the most important actions so it is right at the top in a distinguishing color
-                  and right next to hours. The location of hours next to this make appointment button is not out of convenience, but efficiency. Before making an appointment the first thing a client would 
-                  need to know is what hours they can make an appointment first. I moved less important links/clickable elements to the bottom of the page in a style that still invites some minor attention after the main elements have been scanned. 
 
-            </h3>
-            <h2 id="high_fidelity_label" class="section_text katibeh-section-text">High Fidelity Mockups:</h2>
-            <h3 id="main_redesign_text" class="sub_section_text karla-regular">Now that I had the layouts I wanted planned out it was time to make a style guide along with some designs that would be more representative of the final product. 
-            </h3>
-            <div id="high_fidelity_images">
-                <img src="Images/style guide.png" alt="figma" id="style guide" class="figmas">
-                <img src="Images/desktop figma.png" alt="desktop figma image" id="desktop_figma" class="figmas">
-                <img src="Images/tablet figma.png" alt="tablet figma image" id="tablet_figma" class="figmas">
-                <img src="Images/mobile figma.png" alt="mobile figma image" id="mobile_figma" class="figmas">
-            </div>
-    
+              <ol id="metric_list" class="sub_list_text karla-list">
+                <li>Misclick rate</li>
+
+                  <ul id="misclick_rate_description" class="sub_sub_list_text karla-list">
+                    <li>The frequency with which users click something else on the page before finding the correct button for the task.</li>
+                  </ul>
+
+                <li>Time on page</li>
+                  <ul id="time_on_page_description" class="sub_sub_list_text karla-list">
+                    <li>Time spent on the webpage for each user group.</li>
+                  </ul>
+
+                <li>Number of clicks</li>
+                  <ul id="num_clicks_description" class="sub_sub_list_text karla-list">
+                    <li>The total number of clicks a user makes to complete the task.</li>
+                  </ul>
+              </ol>
+            
+            <h2 id="hypotheses_section_text" class="section_text katibeh-section-text">Hypotheses:</h2>
+            <h3 id="hypotheses_text" class="sub_section_text karla-regular">Each set of hypotheses includes a null hypothesis and an alternative hypothesis. The null hypothesis is one that can be supported by data that in these cases shows
+               there was no change or a statistically insignificant amount of change between the original version and the updated version. The alternative hypothesis essentially says the opposite in that it is supported by data that shows
+                there was indeed a statistically significant change between the two versions based on the metrics outlined above. </h3>
+
+                <ul id="hypotheses_list" class="sub_section_text karla-regular">
+                  <li>Misclick Rate</li>
+                    <ul id="misclick_rate_hypotheses" class="hypotheses sub_list_text karla-list">
+                      <li class="hypothesis_li"><b>Null Hypothesis:</b> The misclick rate between version A and version B are the same.</li>
+                      <li class="hypothesis_li"><b>Alternative Hypothesis:</b> The misclick rate on version B is lower than that of version A.</li>
+                      <li class="hypothesis_li"><b>Alternative Hypothesis Reasoning:</b> The alternative hypothesis will be supported because the clarity of separation between appointment “rows” is more pronounced and the buttons are more easily discernible, thus reducing misclicks.</li>
+                    </ul>
+
+                  <li>Time on page</li>
+                    <ul id="time_on_page_rate_hypotheses" class="hypotheses sub_list_text karla-list">
+                      <li class="hypothesis_li"><b>Null Hypothesis:</b> The time on the page metric between version A and version B are the same.</li>
+                      <li class="hypothesis_li"><b>Alternative Hypothesis:</b> The time on the page metric of  version B is lower than that of version A.</li>
+                      <li class="hypothesis_li"><b>Alternative Hypothesis Reasoning:</b> The alternative hypothesis will be accepted because the improved spacing, including the separation line, as well as the newly contrasted buttons will make the process of selecting an appointment much quicker.</li>
+                    </ul>
+
+                  <li>Number of clicks</li>
+                    <ul id="misclick_rate_hypotheses" class="hypotheses sub_list_text karla-list">
+                      <li class="hypothesis_li"><b>Null Hypothesis:</b> The number of total clicks between version A and version B are the same.</li>
+                      <li class="hypothesis_li"><b>Alternative Hypothesis: </b> The number of total clicks on version B is lower than that of version A.</li>
+                      <li class="hypothesis_li"><b>Alternative Hypothesis Reasoning:</b> The alternative hypothesis will be accepted because the improved layout of all the elements makes it easier for the user
+                         to separate which buttons correlate to which care provider and therefore will be able to find the doctor and location they need with improved ease, and less clicks overall.</li>
+                    </ul>
+                </ul>
+
+             <h2 id="statistical_test_section_text" class="section_text katibeh-section-text">Statistical Tests:</h2>
+             <h3 id="statistical_test_text" class="sub_section_text karla-regular">For each of my hypotheses I chose a one tailed t-test to analyze my results because
+               I wanted to know specifically if version A is less than or greater than version B. whether it be based on misclick rate, amount of time on page, or number of clicks the test applies to all cases.
+                The analysis of whether X bigger or smaller than Y is the only thing I am interested in at this moment, and is exactly what the one tailed T-test provides. I will be analyzing the data mainly in terms of a p-value (indicating the chance the two versions are the same)
+                 as well as the averages of the two data sets.</h3>
+
+                <ul id="hypotheses_list" class="sub_section_text karla-regular">
+                  <li>Misclick Rate</li>
+                    <ul id="statistical_tests_hypotheses" class="hypotheses sub_list_text karla-list">
+                      <li class="statistical_tests_li">After analyzing the data between the two versions I found in the original site, about half the users misclicked while trying to complete the task, whereas on the updated version no users misclicked.
+                        Furthermore the p-value showed that there is a 0.01% chance that the two versions are the same. So there is statistically significant information supporting the alternative hypothesis and rejecting the null hypothesis.
+                      </li>
+                    </ul>
+
+                  <li>Time on page</li>
+                    <ul id="time_on_page_rate_hypotheses" class="hypotheses sub_list_text karla-list">
+                      <li class="statistical_tests_li">The average time on the page for the original version was 29.4 seconds and the average time on the altered version was 10 seconds. Additionally, 
+                        the p-value indicated .0004% chance the two versions yielded the same results. This gives me confidence to say the null hypothesis does not have statistically significant information to support it, but the alternative hypothesis does have that support.
+                      </li>
+                    </ul>
+
+                  <li>Number of clicks</li>
+                    <ul id="misclick_rate_hypotheses" class="hypotheses sub_list_text karla-list">
+                      <li class="statistical_tests_li">The average number of clicks for the original site was 6.4 and the average for the edited version was 2.1 which shows a large improvement. Again the p-value indicated a very low 
+                        chance of the two versions yielding similar results with only a .009% chance. With this information I can assert that there is statistically significant information to both reject the null hypothesis and affirm the alternate hypothesis.
+                      </li>
+                    </ul>
+                </ul>
+
+                <h2 id="summary_test_section" class="section_text katibeh-section-text">Summary:</h2>
+                <h3 id="summary_test_section_text" class="sub_section_text karla-regular">Overall the changes made through making the buttons and site text have higher contrast, as well as creating easily discernible sections
+                  for appointments I was able to make a measurable positive impact on the site. Average time spent on the task, misclicks, and total number of clicks all decreased. This allowed users to quickly and accurately
+                  complete their task with some small but impactful design decisions. 
+                </h3>
+
+                <h2 id="statistics_label" class="section_text katibeh-section-text">Additional Statistics:</h3>
+
+                  <ul id="statistics_list" class="sub_section_text karla-regular">
+                    <li>Misclick Rate</li>
+                      <ul class="stats sub_list_text karla-list">
+                        <li>Avg(A): 0.05333333333</li>
+                        <li>Variance(A): 0.2666666667</li>
+                        <li>Avg(B): 0</li>
+                        <li>Variance(B): 0</li>
+                        <li>Degrees of Freedom: 14</li>
+                        <li>T-Score: 4</li>
+                        <li>P-Value(A&#92;B): 0.9993419754</li>
+                      </ul>
+  
+                    <li>Time on page</li>
+                      <ul class="stats sub_list_text karla-list">
+                        <li>Avg(A): 29411.25</li>
+                        <li>Variance(A): 341951899.9</li>
+                        <li>Avg(B): 10039.2</li>
+                        <li>Variance(B): 7266897.029</li>
+                        <li>Degrees of Freedom: 15.67911481</li>
+                        <li>T-Score: 4.143675468</li>
+                        <li>P-Value(A&#92;B): 0.9996029734</li>
+                      </ul>
+  
+                    <li>Number of clicks</li>
+                      <ul class="stats sub_list_text karla-list">
+                        <li>Avg(A): 6.4375</li>
+                        <li>Variance(A): 40.2625</li>
+                        <li>Avg(B): 2.133333333</li>
+                        <li>Variance(B): 0.1238095238</li>
+                        <li>Degrees of Freedom: 15.0983892</li>
+                        <li>T-Score: 2.708866556</li>
+                        <li>P-Value(A&#92;B): 0.9919514013</li>
+                      </ul>
+                  </ul>
             
         </div>
     </body>

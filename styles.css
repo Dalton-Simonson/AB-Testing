@@ -121,10 +121,17 @@
     padding-right: 10%;
 }
 
+.site_image{
+    max-width: 70%;
+    max-height: 70%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
 
 .section_text{
     align-self: flex-start;
     margin-bottom: 1%;
+    margin-top: 2%;
 }
 
 .sub_section_text{
@@ -139,40 +146,41 @@
     margin-top: 0%;
 }
 
-#main_redesign_text, #annotation_text{
-    margin-top: 3%;
+.sub_sub_list_text{
+    align-self: flex-start;
+    padding-left: 5%;
+    margin-bottom: 2%;
 }
 
-#sketch_images{
-    display: flex;
-}
-
-#final_sketch{
-    max-height: 50%;
+#hypotheses_list{
+    align-self: flex-start;
     margin-left: 5%;
-    margin-top: 17.5%;
+    margin-bottom: 2%;
 }
 
-#screen_sketches, #high_fidelity_images{
-    display: flex;
-    flex-direction: column;
+.hypotheses{
+    padding-left: 4%;
+    margin-bottom: 2%;
 }
 
-.screen_layout_sketches, .figmas{
-    display: flex;
-    margin-top: 5%;
+#statistics_list{
+    align-self: flex-start;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    width: 100%;
 }
 
-#mobile_sketch{
-    max-width: 70%;
-    align-self: center;
+.stats{
+    padding-left: 4%;
+    margin-bottom: 2%;
 }
 
-#mobile_figma{
-    align-self: center;
+.hypothesis_li .statistical_tests_li{
+    margin-bottom: 1%;
 }
 
-.figmas{
-    max-width: 80%;
-    align-self: center;
+.table_image{
+    width: 70%;
+    height: 70%;
 }
+
